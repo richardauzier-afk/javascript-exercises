@@ -6,16 +6,13 @@ const sumAll = function (start, end) {
 		start = end;
 		end = temp;	
 	}
-	if(start < 0 || end < 0){
-		return 'ERROR';
-	}
-	if(!Number.isInteger(start) || !Number.isInteger(end)){
-		return 'ERROR'; 
-	}
-	if(!typeof start == 'number' || !typeof end == 'number'){
-		return 'ERROR';
+	if(start < 0 || end < 0) return 'ERROR';
+	
+	if(!Number.isInteger(start) || !Number.isInteger(end)) return 'ERROR'; 
+	
+	if(!typeof start == 'number' || !typeof end == 'number') return 'ERROR';
 
-	}
+	
 	for(let i = start; start <=end; start++){
 		sum += start;	
 	}
